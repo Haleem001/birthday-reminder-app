@@ -63,7 +63,7 @@ function App() {
         <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
           <div className="flex items-center gap-2">
             <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>cake</span>
-            <span className="text-xl font-extrabold tracking-tight text-primary">Birthday Celebrations</span>
+            <span className="text-xl font-extrabold tracking-tight text-primary">Birthday Reminder</span>
           </div>
           <nav className="flex gap-6 items-center">
             <button
