@@ -15,30 +15,37 @@ export const sendBirthdayEmail = async (user) => {
   const mailOptions = {
     from: `"Mahmud Ghali" <${process.env.EMAIL_USER}>`,
     to: user.email,
-    subject: `🎉 Happy Birthday, ${user.name}! 🎂`,
+    subject: `Warm Birthday Wishes, ${user.name} 🎂`,
     html: `
-      <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 10px; background-color: #fbf9f9;">
-        <div style="text-align: center; margin-bottom: 30px;">
-          <h1 style="color: #006a60; font-size: 28px;">Happy Birthday!</h1>
-          <h2 style="color: #08b1a1; font-size: 24px;">${user.name}</h2>
+      <div style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 40px auto; padding: 40px; border-radius: 8px; background-color: #ffffff; color: #2d3436; border: 1px solid #e0f2f1; box-shadow: 0 10px 25px rgba(0, 77, 64, 0.05);">
+        <div style="border-bottom: 3px solid #00695c; padding-bottom: 20px; margin-bottom: 30px; text-align: left;">
+          <h1 style="margin: 0; font-size: 26px; font-weight: 700; color: #00695c; letter-spacing: -0.5px;">Birthday Greetings ✨</h1>
         </div>
         
-        <p style="font-size: 16px; color: #1b1c1c; line-height: 1.6;">
-          Wishing you a fantastic birthday filled with joy, laughter, and wonderful memories. 
-          May this special day bring you everything your heart desires!
-        </p>
-        
-        <div style="text-align: center; margin: 40px 0;">
-          <span style="font-size: 48px;">🎁 🎈 🎊</span>
+        <div style="font-size: 16px; line-height: 1.8; color: #37474f;">
+          <p>Dear ${user.name},</p>
+          <p>
+            On this special occasion of your birthday, I would like to extend my warmest wishes to you. 
+            May the year ahead be filled with continued success, health, and fulfillment.
+          </p>
+          <p>
+            I hope you have an excellent day of celebration with your loved ones. 🥂
+          </p>
+          <div style="margin-top: 40px; padding: 20px; background-color: #f0fdfa; border-radius: 6px; border-left: 4px solid #00695c;">
+            <p style="margin: 0; color: #004d40; font-style: italic;">
+              "Wishing you a fantastic year ahead!"
+            </p>
+          </div>
+          <p style="margin-top: 40px;">
+            Best regards,
+          </p>
+          <p style="font-weight: 600; color: #00695c;">
+            Mahmud Ghali
+          </p>
         </div>
         
-        <p style="font-size: 16px; color: #1b1c1c; line-height: 1.6;">
-          Have a wonderful celebration today!
-        </p>
-        
-        <div style="margin-top: 40px; border-top: 1px solid #bbcac6; padding-top: 20px; text-align: center; color: #6c7a77; font-size: 12px;">
-          <p>Sent with ❤️ by Mahmud Ghali</p>
-          <p>Automated Birthday Reminder app.</p>
+        <div style="margin-top: 60px; padding-top: 20px; border-top: 1px solid #e0f2f1; text-align: left; color: #99aaa8; font-size: 11px; text-transform: uppercase; letter-spacing: 1px;">
+          <p style="margin: 0;">Automated Birthday Notification System </p>
         </div>
       </div>
     `,
