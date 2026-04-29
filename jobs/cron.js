@@ -5,7 +5,7 @@ import { sendBirthdayEmail } from '../services/email.service.js';
 export const startCronJobs = () => {
   // Run every day at 7:00 AM
   // Schedule format: '0 7 * * *'
-  cron.schedule('30 21 * * *', async () => {
+  cron.schedule('12 23 * * *', async () => {
     console.log('Running daily birthday check cron job at 7 AM...');
 
     try {
